@@ -68,7 +68,7 @@ $jsonPath = "$desktopPath\SystemReport_$timestamp.json"
 $report | ConvertTo-Json | Out-File $jsonPath
 
 if ($Telegram) {
-    $message = "Report - $(Get-Date):`n$basicInfo`n`nFiles saved at:`nJSON: $jsonPath`nHTML: $htmlPath`nCSV: $csvPath"
+    $message = "Report - $(Get-Date):`n$basicInfo`n`nFiles saved at:`nJSON: $jsonPath"
     Send-TelegramMessage -Message $message
 }
 
