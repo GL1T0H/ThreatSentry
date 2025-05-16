@@ -7,7 +7,6 @@ A PowerShell tool for threat hunters to collect and analyze system information, 
 ## Features
 - Collects system details (architecture, IP, users, version, etc.).
 - Analyzes security events for specified Event IDs.
-- Saves data in JSON, HTML, and CSV formats.
 - Sends basic report to Telegram with file paths.
 
 ## Requirements
